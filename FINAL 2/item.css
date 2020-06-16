@@ -1,0 +1,70 @@
+.item-carousel {
+    height: 500px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.colorful-1 {
+    background-image: url(assets/images/ITEMS/colorful-rug.jpg);
+}
+
+.colorful-2 {
+    background-image: url(assets/images/ITEMS/colorful-rug-1.jpg);
+}
+
+.colorful-3 {
+    background-image: url(assets/images/ITEMS/colorful-rug-3.jpg);
+}
+
+.theia-1 {
+    background-image: url(assets/images/ITEMS/Abstract-Theia-Rug.jpg);
+}
+
+.theia-2 {
+    background-image: url(assets/images/ITEMS/Abstract-Theia-Rug-2.jpg);
+}
+
+.theia-3 {
+    background-image: url(assets/images/ITEMS/Abstract-Theia-Rug-3.jpg);
+}
+
+.zigzag-1 {
+    background-image: url(assets/images/ITEMS/colorful-zigzag-rug.jpg);
+}
+
+.zigzag-2 {
+    background-image: url(assets/images/ITEMS/colorful-zigzag-rug-2.jpg);
+}
+
+.floral-1 {
+    background-image: url(assets/images/ITEMS/floral-rug.jpg);
+}
+
+.floral-2 {
+    background-image: url(assets/images/ITEMS/floral-rug-3.jpg);
+}
+
+.floral-3 {
+    background-image: url(assets/images/ITEMS/floral-rug-2.jpg);
+}
+
+.pink-1 {
+    background-image: url(assets/images/ITEMS/pink-rug-3.jpg);
+}
+
+.pink-2 {
+    background-image: url(assets/images/ITEMS/pink-rug-2.jpg);
+}
+
+.abstract-1 {
+    background-image: url(assets/images/ITEMS/abstract-rug.jpg);
+}
+
+.abstract-2 {
+    background-image: url(assets/images/ITEMS/abstract-rug-2.jpg);
+}
+
+.abstract-3 {
+    background-image: url(assets/images/ITEMS/abstract-rug-3.jpg);
+}

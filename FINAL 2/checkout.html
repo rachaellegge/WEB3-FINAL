@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <title>Happy Rugs(:</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md fixed-top" style="background-color: #171426;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon p-0"><img src="assets/smile.png" style="height: 30px;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ml-5 mr-5">
+                        <a class="nav-link green" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ml-5 mr-5">
+                        <a class="nav-link green" href="shop.html">Shop</a>
+                    </li>
+                    </li>
+                    <li class="nav-item ml-5 mr-5">
+                        <a class="nav-link green" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ml-5 mr-5">
+                        <a class="nav-link green" href="about.html">About</a>
+                    </li>
+            </div>
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item ml-5 mr-5 mt-0 mb-0"></li>
+                <a class="nav-link" href="cart.html"><button type="button" class="btn btn-sm btn-outline-light"><i
+                            class="fa fa-shopping-cart"></i> Cart <span class="count">0</span></button></a>
+                </li>
+            </div>
+        </nav>
+        <div class="nav-shim"></div>
+    </header>
+
+    <h1 id="demo1" class="logo text-center">happyrugs.</h1>
+    <div class="container container-shop"></div>
+
+    <main>
+        <!--FORM-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="" method="get" name="checkout" autocomplete="on" class="needs-validation mb-5"
+                        novalidate>
+                        <!--Shipping-->
+                        <h4>Shipping</h4>
+                        <!--name-->
+                        <div class="form-row">
+                            <!--first name-->
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" id="shippingFirstName" placeholder="First Name"
+                                    oninput="alphaOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid name.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your first name.
+                                </div>
+                            </div>
+                            <!--last name-->
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" id="shippingLastName" placeholder="Last Name"
+                                    oninput="alphaOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid name.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your last name.
+                                </div>
+                            </div>
+                        </div>
+                        <!--email-->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="email" class="form-control" id="shippingEmail" placeholder="john@gmail.com"
+                                    oninput="emailOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid email.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+                            </div>
+                        </div>
+                        <!--address-->
+                        <div class="form-row">
+                            <div class="col-md-9 mb-3">
+                                <input type="text" class="form-control" id="shippingAddress" placeholder="1234 Main St"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter your address.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+                            </div>
+                        </div>
+                        <!--city-->
+                        <div class="form-row">
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" id="shippingCity" placeholder="City"
+                                    oninput="alphaOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid city.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your city.
+                                </div>
+                            </div>
+                        </div>
+                        <!--state/zip-->
+                        <div class="form-row">
+                            <div class="col-6 mb-3">
+                                <input type="text" class="form-control" id="shippingState" placeholder="State"
+                                    oninput="statesOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid state.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your state.
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <input type="text" class="form-control" id="shippingZip" placeholder="Zip"
+                                    oninput="numbersOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid zip code.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your zip code.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Shipping-->
+
+
+
+
+
+                        <h4 class="mt-3 mb-3">Billing</h4>
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox" class="mb-4" /> Shipping and billing address the same?
+                        </label>
+
+
+                        <!-- hide Billing -->
+                        <div class="shipping">
+                            <div class="form-row">
+                                <!--first name-->
+                                <div class="form-group col-12 col-md-6">
+                                    <input type="text" class="form-control" id="shippingFirstName"
+                                        placeholder="First Name" oninput="alphaOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid name.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your first name.
+                                    </div>
+                                </div>
+                                <!--last name-->
+                                <div class="form-group col-12 col-md-6">
+                                    <input type="text" class="form-control" id="shippingLastName"
+                                        placeholder="Last Name" oninput="alphaOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid name.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your last name.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--email-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <input type="email" class="form-control" id="shippingEmail"
+                                        placeholder="john@gmail.com" oninput="emailOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid email.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--address-->
+                            <div class="form-row">
+                                <div class="col-md-9 mb-3">
+                                    <input type="text" class="form-control" id="shippingAddress"
+                                        placeholder="1234 Main St">
+                                    <div class="invalid-feedback">
+                                        Please enter your address.
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+                                </div>
+                            </div>
+                            <!--city-->
+                            <div class="form-row">
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control" id="shippingCity" placeholder="City"
+                                        oninput="alphaOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid city.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your city.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--state/zip-->
+                            <div class="form-row">
+                                <div class="col-6 mb-3">
+                                    <input type="text" class="form-control" id="shippingState" placeholder="State"
+                                        oninput="statesOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid state.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your state.
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input type="text" class="form-control" id="shippingZip" placeholder="Zip"
+                                        oninput="numbersOnly();">
+                                    <div class="invalid-input">
+                                        Please enter a valid zip code.
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter your zip code.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .hide -->
+
+                        <!--PAYMENT GROUP-->
+                        <h4 class="mt-3">Payment</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label class="name" for="creditCardName">Name (as it appears on your
+                                    card)</label>
+                                <input type="name" class="form-control" id="creditCardName" placeholder="Ex: John Smith"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label class="name" for="creditCardName">Card Number</label>
+                                <input type="name" class="form-control" id="creditCardNumber"
+                                    placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-6">
+                                <label class="name" for="creditCardExpiry">Expiry Date</label>
+                                <input type="name" class="form-control" id="creditCardExpiry" placeholder="01/20"
+                                    required>
+
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="name" for="creditCardSecurity">Security Code</label>
+                                <input type="name" class="form-control" id="creditCardSecurity"
+                                    placeholder="&#8226;&#8226;&#8226;" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" value="submit"
+                            class="btn btn-block btn-color mt-5 add-cart"><b>SUBMIT</b></button></a>
+
+                        <!--END PAYMENT-->
+                </div>
+                <div class="col-md-4">
+                    <h2>Order Summary</h2>
+                    <hr>
+                    <div class="row m-0">
+                        <div class="col-sm-8 p-0 ">
+                            <h6>Subtotal</h6>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="subtotal">$66.00</p>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-8 p-0 ">
+                            <h6>Tax</h6>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="tax">$5.94</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mx-0 mb-2">
+                        <div class="col-sm-8 p-0 d-inline">
+                            <p class="lead"><b>Total</b></h5>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="total" class="lead"><b>$71.94</b></p>
+                        </div>
+                    </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script src="dist/circletype.min.js"></script>
+
+</body>
+
+</html>
