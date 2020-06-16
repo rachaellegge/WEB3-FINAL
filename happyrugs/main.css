@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* TYPE */
+
+h4 {
+  color: #D91A73;
+  font-weight: 700;
+}
+
+h1, .navbar-brand {
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.06rem;
+}
+
+h1 {
+  color:#171426;
+}
+
+h3 {
+  color: #D91A73;
+  font-size: 700;
+}
+
+h2 {
+  color: #6FBF83 !important;
+  font-weight: 700;
+}
+
+/* TYPE */
+
+/* NAV */
+
+
+.nav-link {
+  color:white;
+}
+
+.nav-shim{
+  height: 56px;
+}
+
+
+.green:hover {
+  border-bottom: solid #6FBF83 3px;
+}
+
+.pink-active:hover {
+  border-bottom: solid #D91A73 3px;
+  color: #D91A73;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+.quote {
+  color:white;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+}
+
+.mission {
+  font-family: 'Raleway', sans-serif;
+}
+
+.pink-active {
+  color: #D91A73;
+  font-weight: 700;
+}
+
+
+
+.green {
+  color: #6FBF83 !important;
+}
+
+/* NAV */
+
+/* CARD */
+.card {
+  overflow: hidden;
+}
+
+.card-body {
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 348px;
+  background-size: 100% 100%;
+  background-position: center;
+  transition: background-size 0.3s ease-in-out
+}
+
+.card:hover .card-img-top {
+  background-size: 120% 120%;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+
+/* CARD */
+
+hr {
+  border-top: 1px solid #6FBF83;
+}
+
+/* CAROUSEL */
+.carousel-caption {
+  transform: translateY(-55%);
+  top: 65%;
+  bottom: 0;
+}
+
+.bg-carousel-1,
+.bg-carousel-2,
+.bg-carousel-3
+{
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-carousel-1 {
+background-image: url('assets/images/CAROUSEL/colorful-rug-2.jpg');
+}
+
+.bg-carousel-2 {
+background-image: url('assets/images/CAROUSEL/colorful-zigzag-rug-3.jpg');
+}
+
+.bg-carousel-3 {
+background-image: url('assets/images/CAROUSEL/pink-rug.jpg');
+}
+
+
+/* CAROUSEL */
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-image: url(assets/images/CAROUSEL/jumbotron-about.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-1 {
+  background-image: url(assets/images/CAROUSEL/jumbotron-about.jpg);
+}
+
+.jumbotron-2 {
+  background-image: url(assets/images/CAROUSEL/3122642_image_1013.jpg);
+  height: 400px;
+  background-position: bottom;
+}
+
+.container-shop {
+  height: 200px;
+}
+
+/* JUMBOTRON */
+
+/* BUTTONS */
+
+.btn-color {
+  border: #D91A73 solid 2px;
+  color: #F26E22;
+}
+
+.btn-color:hover {
+background-color:#6FBF83;
+border: white 2px solid;
+color: white;
+}
+
+/* BUTTONS */
+
+/* LOGO */
+.logo {
+transform: translateY(115%) translateX(-50%);
+top: 0;
+left: 50%;
+color: #D91A73;
+position: absolute;
+font-size: 50px;
+z-index: 20;
+}
+
+.logo-animate {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-bottom: 0%;
+  }
+}
+
+
+.logo div span:nth-last-child(1) {
+color: #6FBF83;
+}
+
+.logo div span:nth-last-child(2),
+.logo div span:nth-last-child(3),
+.logo div span:nth-last-child(4),
+.logo div span:nth-last-child(5) {
+color: #F26E22;
+}
+
+/* LOGO */
+
+
+/* SQUIGGLY-LINE ELEMENTS */
+
+.holder {
+  /* Clip edges, as some of the lines don't terminate nicely. */
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}
+
+.ellipse-pink {
+  position: absolute;
+  background: radial-gradient(ellipse, transparent, transparent 7px, #D91A73 7px, #D91A73 10px, transparent 11px);
+  background-size: 36px 40px;
+  width: 200px;
+  height: 20px;
+}
+
+.ellipse-green {
+  position: absolute;
+  background: radial-gradient(ellipse, transparent, transparent 7px, #6FBF83 7px, #6FBF83 10px, transparent 11px);
+  background-size: 36px 40px;
+  width: 200px;
+  height: 20px;
+}
+
+.ellipse-orange {
+  position: absolute;
+  background: radial-gradient(ellipse, transparent, transparent 7px, #F26E22 7px, #F26E22 10px, transparent 11px);
+  background-size: 36px 40px;
+  width: 200px;
+  height: 20px;
+}
+
+.ellipse2 {
+  top: 20px;
+  left: 18px;
+  background-position: 0px -20px;
+}
+
+
+
+
+
+.hide {
+  display: none;
+}
+
+
+
+
+/* SQUIGGLY-LINE ELEMENTS */
+
+footer {
+  background-color: #171426;
+}
+
+
+
+
+
+ 
+
+  
